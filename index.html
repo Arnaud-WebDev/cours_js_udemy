@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Udemy-Test</title>
+  </head>
+  <body>
+    <h3 id="title1">-</h3>
+    <h3 id="title2">-</h3>
+
+    <div class="border"></div>
+
+    <h2>Cette méthode permet de calculer le volume d'une sphère pour un rayon de 10 centimètres :</h2>
+    <p>La formule pour calculer le volume d'une sphère est :</p>
+
+    <figure>
+      <blockquote class="sphere">
+        <p class="sphere--formule">(4/3) x π x rayon³</p>
+      </blockquote>
+    </figure>
+
+    <h3 id="calcule_rayon">-</h3>
+    <h3 id="calcule">-</h3>
+    <h3 id="result">-</h3>
+    <h3 id="result2">-</h3>
+    <h3 id="alternative_result">-</h3>
+
+    <div class="border"></div>
+
+    <!-- Dés aléatoire de 1 à 6 -->
+    <figure>
+      <img src="./images/roll_dice.png" alt="Roll the dice !" class="image" />
+      <figcaption>Roll the dice !</figcaption>
+    </figure>
+
+    <div class="dice">
+      <button id="btn-dice">Roll the dice !</button>
+      <span id="result-dice"></span>
+    </div>
+    <!-- Dés aléatoire de 1 à 6 (fin) -->
+
+    <div class="border"></div>
+
+    <h3 class="border_title">Exercice 22 : additionner les valeurs d'un objet</h3>
+
+    <figure>
+      <cite>Grâce à cette fonction, on peut calculer la valeur total des salaires de chaque employés : :</cite>
+      <blockquote>
+        <p>
+          function getTotalSalaries2(employes2) { <br />
+          let total = 0; <br />
+          for (let key in employes2) { <br />
+          let value = employes2[key]; <br />
+          total += value; } <br />
+          return total; <br />
+          }
+        </p>
+      </blockquote>
+    </figure>
+
+    <figure>
+      <cite>On crée la variable :</cite>
+      <blockquote>
+        <p>
+          let employes2 = {<br />
+          Pierre: 2500, <br />
+          Marie: 5000, <br />
+          Julien: 1200, <br />
+          Alexandra: 6000, <br />
+          Arnaud: 5000, <br />
+          Jean_michel_caméra: 10000, <br />
+          Denis: 3456, <br />
+          };
+        </p>
+      </blockquote>
+    </figure>
+
+    <figure>
+      <cite>On crée la variable :</cite>
+      <blockquote>
+        <p>
+          let resultat9 = getTotalSalaries2(employes2); <br />
+          console.log(resultat9);
+        </p>
+      </blockquote>
+    </figure>
+    <br />
+
+    <!-- Tableau -->
+    <p>On obtient ainsi un tableau avec les noms et le salaire des personnes ainsi que le total des salaires :</p>
+    <div id="tab"></div>
+    <figure>
+      <cite>Et avec cette function on peut effectuer un eventListener au click sur chaque case, qui change de blanc à gris :</cite>
+      <blockquote>
+        <p>
+          let click = document.querySelectorAll('tr'); <br />
+          for (let td of click) { <br />
+          td.addEventListener('click', function () { this.classList.toggle('gris'); }); }
+        </p>
+      </blockquote>
+    </figure>
+    <!-- Tableau -->
+
+    <div class="border"></div>
+
+    <h3 class="border_title">Exercice 23 : filtrer les éléments d'un tableau</h3>
+    <p>
+      L'exercice 23 consiste à filtrer les éléments d'un tableau selon une condition. <br />
+      Le tableau contient des chaînes de caratère plus ou moins longue, le but étant de filtrer les chaines de plus de 5 caractères, pour que celle si soient affichées. <br />
+    </p>
+
+    <figure>
+      <cite>les chaînes ayant moins ou égale à 5 caractères ne seront pas affichées. Exemple:</cite>
+      <blockquote>
+        <p>
+          const animaux = ['Perroquet', 'Cheval', 'Coq', 'Poule', 'Mouflon', 'Baleine', 'Lièvre', <br />
+          'Baleine', 'Requin', 'Tigre']; <br />
+          <br />
+
+          const result_animaux = animaux.filter((animaux) => animaux.length > 5).join(', ');
+        </p>
+      </blockquote>
+    </figure>
+    <div id="animaux"></div>
+
+    <div class="border"></div>
+
+    <h3 class="border_title">Exercice 24 : nettoyer les éléments d'un tableau</h3>
+    <p>
+      Dans cet exercice, il faut nettoyer les éléments d'un tableau. <br />
+      Cette const contient des chaînes de caractères (prénoms) avec des numéros. <br />
+      Le but est de retirer les chiffres, et qu'en cas d'ajout d'un nouveau prénoms avec des chiffres, celui soit comme les autres : <br />
+    </p>
+
+    <figure>
+      <cite> Voici la solution : </cite>
+      <blockquote>
+        <p>
+          const prenoms = ['Jul2ien', 'P1ierre', 'Pau23line', 'Patrick88']; <br />
+          let resultat = [ ]; <br />
+          <br />
+          for(let prenom of prenoms) { <br />
+          let fix = prenom.replace(/[0-9/g, ''); <br />
+          resultat.push(fix) <br />
+          }
+        </p>
+      </blockquote>
+    </figure>
+
+    <div id="result24"></div>
+
+    <div class="border"></div>
+
+    <h3 class="border_title">Exercice 25 : Formater une chaîne de caractères</h3>
+    <p>Dans cet exercice, on doit insérer les variables dans une chaîne de caractères, plusieurs version sont possible, en voici 2 :</p>
+    <figure>
+      <cite> Voici les solutions : </cite>
+      <blockquote>
+        <p>
+          const prenom = 'Patrick'; <br />
+          const age = '53'; <br />
+          const moneyAccount01 = '10293'; <br />
+          const moneyAccount02 = '392011'; <br />
+          <br />
+          let account = parseInt(moneyAccount01); <br />
+          let account2 = parseInt(moneyAccount02); <br />
+          <br />
+          let presentation = `Bonjour, je m'appelle ${prenom} et j'ai ${age} ans. J'ai actuellement ${account + account2}$ dans mes comptes en banque.` <br />
+          <br />
+
+          Et voici la 2ème solution : <br />
+          <br />
+
+          const prenom = 'Patrick'; <br />
+          const age = '53'; <br />
+          const moneyAccount01 = '10293'; <br />
+          const moneyAccount02 = '392011'; <br />
+          <br />
+          let prensetation = `Bonjour, je m'appelle ${prenom} et j'ai ${age} ans. J'ai actuellement ${Number(moneyAccount01) + Number(moneyAccount02)}$ dans mes comptes en banque.` <br />
+        </p>
+      </blockquote>
+    </figure>
+    <br />
+    <div id="result25"></div>
+    <br />
+    <p>
+      La première solution est un peut plus longue, on transforme la chaîne de caractère en chiffe entier avec "parseInt" alors qu'avec "Number" la chaine de caratère est directement transformée en
+      chiffre dans la variable.
+    </p>
+    <br />
+
+    <figure>
+      <img src="images/exercice_24.png" alt="Code Javascript" class="image" />
+      <figcaption>Voici le résultat en photo</figcaption>
+    </figure>
+
+    <h3>Les fichiers CSS et JS étant trop volumineux, par soucis de clarté dans mon code, je vais changer de page, <a href="cours_js.html" target="_blank">la suite ici</a></h3>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

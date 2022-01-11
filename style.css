@@ -1,0 +1,201 @@
+/* Mise en page */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
+
+* {
+  font-family: Roboto;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Balises h1, h2, h3, em, strong .... */
+.main_title {
+  font-style: italic;
+  background-color: rgba(128, 128, 128, 0.521);
+  border-radius: 20px;
+  width: 35%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 4px black;
+  font-size: 0.8rem;
+}
+
+h3 {
+  margin: 10px;
+}
+
+em {
+  color: green;
+}
+
+strong {
+  color: red;
+}
+.bold {
+  font-weight: bold;
+}
+
+code {
+  border: 1px solid teal;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: rgba(0, 128, 128, 0.438);
+}
+/* Balises h1, h2,h3 .... */
+
+/* Mise en page (fin) */
+
+/* Calcule sphère */
+.sphere {
+  width: 18%;
+}
+.sphere--formule {
+  text-align: center;
+}
+
+/* Calcule sphère (fin) */
+
+/* Boutton Roll the dice */
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(12, 15, 15, 0.726);
+}
+
+.dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#result-dice {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0;
+}
+/* Boutton Roll the dice */
+
+/* Border */
+.border {
+  border: 2px solid grey;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.border_title:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 17%;
+  border-bottom: 3px solid teal;
+}
+/* Border */
+
+/* Tableau  */
+table {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+td {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#nom {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#salaire {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+/* Tableau  */
+
+/* Click Event sur tableau*/
+.gris {
+  background-color: rgba(190, 182, 182, 0.678);
+}
+/* Click Event sur tableau*/
+
+/* Blobkquote */
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+blockquote {
+  background-color: rgba(190, 182, 182, 0.678);
+  width: 30%;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+blockquote p {
+  word-break: break-all;
+  text-align: justify;
+  padding-left: 20px;
+  font-size: 0.9rem;
+}
+
+figure cite {
+  margin: 10px;
+}
+/* Blobkquote */
+
+/* Exercice 23 */
+#animaux {
+  font-style: italic;
+  font-weight: 500;
+}
+/* Exercice 23 */
+
+/* Exercice 24 */
+.image {
+  width: 50%;
+}
+/* Exercice 24 */
+
+/* Media queries */
+
+@media screen and (max-width: 1369px) {
+  .main_title {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 1223px) {
+  .main_title {
+    font-size: 0.5rem;
+  }
+
+  blockquote {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sphere {
+    width: 30%;
+  }
+  blockquote {
+    width: 55%;
+  }
+
+  blockquote p {
+    font-size: 0.5rem;
+  }
+}
