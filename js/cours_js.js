@@ -8,6 +8,8 @@ const b = 6;
 const c = 2;
 
 // Début de l'exercice
-const r1 = c;
-const r2 = a;
-const r3 = b;
+const r1 = Math.min(a, b, c);
+const r3 = Math.max(a, b, c);
+const r2 = a + b + c - r1 - r3;
+
+console.log(r2);
