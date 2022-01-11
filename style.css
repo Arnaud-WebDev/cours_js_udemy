@@ -166,11 +166,8 @@ figure cite {
 
 /* Exercice 24 */
 .image {
-  width: 50%;
-}
-
-.image2 {
-  width: 20%;
+  max-width: 50%;
+  box-shadow: 4px 4px 7px teal;
 }
 
 /* Exercice 24 */

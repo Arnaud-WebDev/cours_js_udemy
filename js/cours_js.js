@@ -24,4 +24,16 @@ while (i > 10) {
 
 const exercice_reussi = true;
 
-console.log(i);
+//console.log(i);
+
+//---------------------------
+//        Exercice 28
+//---------------------------
+
+function showIndividualLetters(mot) {
+  for (let i = 0; i < 9; i++) {
+    console.log(mot.charAt(/[a-z]/g, ''));
+  }
+}
+
+showIndividualLetters('JavaScript');
