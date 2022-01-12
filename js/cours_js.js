@@ -74,15 +74,17 @@ function compareStrings(s1, s2) {
 // Ne modifiez pas les lignes ci-dessous
 let firstCheck = compareStrings('Hello world', 'Hello world');
 let secondCheck = compareStrings('Hello world', 'Goodbye world');
-console.log(firstCheck);
-console.log(secondCheck);
+/* console.log(firstCheck);
+console.log(secondCheck); */
 
 //---------------------------
 //        Exercice 30
 //---------------------------
-
 function multiplicationTable(number) {
-  // Écrivez votre code ici
+  for (i = 0; i <= 10; i++) {
+    let result = i * number;
+    console.log(`${i} x ${number} = ${result}`);
+  }
 }
 
 // Ne modifiez pas le code ci-dessous
