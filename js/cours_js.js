@@ -76,3 +76,14 @@ let firstCheck = compareStrings('Hello world', 'Hello world');
 let secondCheck = compareStrings('Hello world', 'Goodbye world');
 console.log(firstCheck);
 console.log(secondCheck);
+
+//---------------------------
+//        Exercice 30
+//---------------------------
+
+function multiplicationTable(number) {
+  // Écrivez votre code ici
+}
+
+// Ne modifiez pas le code ci-dessous
+multiplicationTable(4);
