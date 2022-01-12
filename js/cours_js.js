@@ -80,6 +80,7 @@ console.log(secondCheck); */
 //---------------------------
 //        Exercice 30
 //---------------------------
+
 function multiplicationTable(number) {
   for (i = 0; i <= 10; i++) {
     let result = i * number;
