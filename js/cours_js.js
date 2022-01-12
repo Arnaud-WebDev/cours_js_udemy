@@ -32,8 +32,7 @@ const exercice_reussi = true;
 
 function showIndividualLetters(mot) {
   for (let i = 0; i < 9; i++) {
-    console.log(mot.charAt(/[a-z]/g, ''));
+    console.log(i + mot.match(/[a-z A-Z]/g).slice(0, 1));
   }
 }
-
 showIndividualLetters('JavaScript');
