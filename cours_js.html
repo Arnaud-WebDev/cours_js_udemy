@@ -104,7 +104,7 @@
     <p>Dans cet exercice, il fallait modifier les valeurs de la boucle et l'élément affiché pour afficher les lettres du mot JavaScript.</p>
     <p>
       On commence par modifier la valeur initiale de <code>i</code>. On commence donc a 0 et on boucle tant que <code>i</code> est plus petit que la longueur du mot (que l'on récupère avec
-      <code>mot.length</code>.
+      <code>mot.length</code>).
     </p>
 
     <p>À 'lintérieur de la boucle <code>for</code>, plutôt que d'afficher la valeur <code>i</code>, on affiche la valeur de <code>mot[i]</code>.</p>
@@ -117,6 +117,68 @@
     <div class="border"></div>
 
     <h3 class="border_title">Exercice 29 - Comparer deux chaînes de caractères</h3>
+
+    <p>Le but de cet exercice est de créer une fonction <code>compareStrings</code> qui vérifie si deux chaînes de caractères sont strictement identiques (donc sensible à la casse).</p>
+    <br />
+    <p>La première vérification que l'on effectue (<code>firstCheck</code>) doit donc retourner <code>true</code> car les deux chaînes correspondent.</p>
+    <br />
+    <p>La seconde vérification (<code>secondCheck</code>) elle doit retourner <code>false</code>.</p>
+    <br />
+
+    <figure>
+      <img src="./images/exercice_29.png" alt="Exercice 29" class="image" />
+    </figure>
+
+    <figure>
+      <cite>Voici la solution :</cite>
+      <img src="./images/exercice_29(bis).png" alt="Exercice 29" class="image" />
+    </figure>
+    <br />
+    <p>On récupère deux chaînes de caractères dans les paramètres s1 et s2.</p>
+    <p>La première vérification à faire est de vérifier la longueur des chaînes de caractères. En effet, si la longueur des deux chaînes est différente, on n'a même pas besoin d'aller plus loin :</p>
+    <br />
+
+    <figure>
+      <img src="./images/exercice_29(bis2).png" alt="Exercice 29" class="image" />
+    </figure>
+    <br />
+
+    <p>On utilise donc une structure conditionnelle et l'opérateur de différence <code>!==</code></p>
+    <p>Si la longueur de <code>s1</code> est différente de celle de <code>s2</code>, on ne va pas plus loin et on retourne <code>false</code>.</p>
+    <br />
+    <p>On utilise ensuite une boucle <code>for</code> 'classique' pour récupérer chaque caractère de nos deux chaînes de caractères.</p>
+    <br />
+    <p>
+      On utilise la longueur de <code>s1</code> comme condition (<code>i < s1.length</code>). On peut utiliser <code>s1</code> ou <code>s2</code>, ça n'a pas d'importance, car on a vérifié au
+      préalable que la longueur des deux chaînes de caractères étaient la même.
+    </p>
+    <br />
+    <p>Donc à ce stade de la fonction, on est assuré que <code>s1.length</code> est égal à <code>s2.length</code>.</p>
+    <br />
+    <p>On utilise une boucle classique avec une variable que l'on incrémente, car cela nous permet de récupérer les caractères des deux chaînes de caractères.</p>
+    <p>C'est pour cette raison que nous n'utilisons pas une boucle <code>for...of</code> pour boucler sur <code>s1</code> ou <code>s2</code> :</p>
+    <br />
+
+    <figure>
+      <img src="./images/exercice_29(bis3).png" alt="Exercice 29" class="image" />
+    </figure>
+    <br />
+
+    <p>On récupère ainsi le premier caractère de <code>s1</code>, et le premier caractère de <code>s2</code>.</p>
+    <p>On utilise ensuite une structure conditionnelle pour vérifier si ces deux caractères son différents.Si c'est le cas, on ne va pas plus loin et on retourne <code>false</code> :</p>
+    <br />
+
+    <figure>
+      <img src="./images/exercice_29(bis4).png" alt="Exercice 29" class="image" />
+    </figure>
+    <br />
+    <p>Si le programme sort de la boucle <code>for</code>, ça veut dire que tous les caractères que nous avons comparés étaient similaires. Et donc que les deux chaînes de caractères le sont.</p>
+    <br />
+    <p>On peut donc retourner le booléen <code>true</code> à la sortie de la boucle <code>for</code> pour indiquer que les deux chaînes correspondent.</p>
+
+    <div class="border"></div>
+
+    <h3 class="border_title">Exercice 30 - Afficher la table de multiplication d'un nombre</h3>
 
     <script src="./js/cours_js.js"></script>
   </body>
