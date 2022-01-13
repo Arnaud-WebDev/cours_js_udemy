@@ -1,6 +1,7 @@
 function sumNumber(number) {
-  let result = Math.abs(number).toString().split('');
+  let result = number.toString().split('');
   result.forEach((e) => console.log(e));
+
   /* let reducer = (previousValue, currentVallue) => previousValue + currentVallue;
   console.log(result.reduce(reducer)); */
 }
