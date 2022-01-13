@@ -57,5 +57,24 @@ console.log(names_replaced); */
 //        Exercice 33
 //---------------------------
 
+//Ma solution
+/* let numbers = [1, 2, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10];
+let numbersWithoutDuplicates = [];
+numbersWithoutDuplicates.push(...new Set(numbers));
+
+console.log(numbersWithoutDuplicates);  */
+
+//Solution sur Udemy
 let numbers = [1, 2, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10];
 let numbersWithoutDuplicates = [];
+
+for (let number of numbers) {
+  if (numbersWithoutDuplicates.indexOf(number) === -1) {
+    numbersWithoutDuplicates.push(number);
+  }
+}
+
+console.log(numbersWithoutDuplicates);
+
+const ht = new Set(numbers);
+console.log(ht);
