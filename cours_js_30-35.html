@@ -144,13 +144,68 @@
 
     <h3 class="border_title">Exercice 33 - Enlever les doublons d'un tableau</h3>
     <p>Dans cet exercice, on doit enlever les doublons du tableau <code>numbers</code> et récupérer les nombres dans le tableau <code>numbersWithoutDuplicates</code>.</p>
-    <p>Le tableau <code>numbersWithoutDuplicates</code> devra donc être égale à <code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</code></p>
+    <p>Le tableau <code>numbersWithoutDuplicates</code> devra donc être égale à <code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</code> :</p>
     <br />
 
     <figure>
       <img src="./images/exercice_33.png" alt="Fontion" class="image" />
     </figure>
     <br />
+
+    <figure>
+      <cite>Voici la solution sur Udemy</cite>
+      <img src="./images/exercice_33(bis).png" alt="Fontion" class="image" />
+    </figure>
+    <br />
+
+    <p>On commence par créer un tableau vide que l'on va remplir avec les nombres uniques.</p>
+    <p>On boucle ensuite grâce à la boucle <code>for...of</code> sur la liste d'origine qui contient tous les nombres avec les doublons.</p>
+    <p>À l'intérieur de cette boucle, on utilise la méthode <code>indexOf</code> pour récupérer la position dans le tableau final du nombre sur lequel on est en train de boucler.</p>
+    <p>Lors de la première itération, <code>number</code> sera égal à <code>1</code>.</p>
+    <p>
+      La fonction <code>indexOf</code> nous retournera donc <code>-1</code> car le nombre <code>1</code> n'est pas présent dans le tableau <code>numbersWithoutDuplicates</code> (pour l'instant il est
+      vide).
+    </p>
+    <p>
+      La condition <code>numbersWithoutDuplicates.indexOf(number) === -1</code> sera donc validée et on ajoute ainsi le nombre dans la liste <code>numbersWithoutDuplicates</code> (avec la méthode
+      <code>push()</code>) :
+    </p>
+    <br />
+
+    <figure>
+      <img src="./images/exercice_33(bis2).png" alt="Fontion" class="image" />
+    </figure>
+    <br />
+
+    <p>
+      Quand on tombe sur un nombre qui est déjà présent dans la liste <code>numbersWithoutDuplicates</code>, la méthode <code>indexOf</code> ne retournera pas <code>-1</code>, <br />
+      mais l'indice du nombre déjà présent dans la liste. La condition ne sera donc pas validée et on n'ajoutera donc pas ce nombre une deuxième fois.
+    </p>
+    <p>On obtient ainsi une liste qui ne contient aucun doublon.</p>
+    <br />
+    <p>J'ai pour ma part j'ai trouvé une autre solution avec la méthode <code>Set</code> :</p>
+    <br />
+    <figure>
+      <cite>Voici ma solution :</cite>
+      <img src="./images/exercice_33(bis3).png" alt="Fontion" class="image" />
+    </figure>
+    <br />
+
+    <p>
+      <code>Set</code> est un objet qui a été introduit dans ES6. La nature de <code>Set</code> est telle qu'il vous permet de stocker obligatoirement et uniquement des valeurs uniques, singulières.
+      <br />
+      Lorsque vous lui passez un tableau, <code>Set</code> supprimera toutes les valeurs en double.
+    </p>
+    <p>
+      Si on avait juste utilisé la méthode <code>new Set(numbers)</code> on aurait juste converti notre tableau en argument. Les doublons seraient bien enlevés mais ce ne serait plus un tableau.
+      <br />
+      Le spread operator <code>...</code> nous permet de convertir le tout en tableau.
+    </p>
+    <p>Et bien évident on <code>.push()</code> directement l'opération dans la variable <code>numbersWithoutDuplicates</code>.</p>
+
+    <div class="border"></div>
+
+    <h3 class="border_title">Exercice 34 - Recréer la propriété length</h3>
 
     <script src="./js/cours_js_30-35.js"></script>
   </body>
