@@ -40,21 +40,22 @@ names_replaced = names.map((x) => x.replace('Julie', 'Julien'));
 
 //console.log(names_replaced);
 
+//---------------------------
 //Solution alternative sans map()
+//---------------------------
 
-/* let names_replaced = [];
-for (let name of names) {
-    names_replaced.push(name.replace('Julie', 'Julien'));
-}
-console.log(names_replaced); */
-
-//Solution alternative sans map()
-
-let names = ['Pierre', 'Marie', 'Julie', 'Adrien', 'Julie'];
+/* let names = ['Pierre', 'Marie', 'Julie', 'Adrien', 'Julie'];
 
 let names_replaced = [];
 
 for (let name of names) {
   names_replaced.push(name.replace('Julie', 'Julien'));
 }
-console.log(names_replaced);
+console.log(names_replaced); */
+
+//---------------------------
+//        Exercice 33
+//---------------------------
+
+let numbers = [1, 2, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10];
+let numbersWithoutDuplicates = [];
