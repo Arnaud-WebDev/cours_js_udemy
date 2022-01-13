@@ -1,6 +1,7 @@
 //---------------------------
 //        Exercice 31
-//---------------------------function sumNumber(number) {
+//---------------------------
+/* function sumNumber(number) {
   let result = number.toString().split('');
   let result2 = result.map(Number);
   console.log(result2);
@@ -11,7 +12,7 @@
 
 // Ne modifiez pas la ligne ci-dessous
 let sum = sumNumber(31245);
-console.log(sum);
+console.log(sum); */
 
 function sumNumber(number) {
   let digitsAsList = number.toString().split('');
@@ -25,7 +26,6 @@ function sumNumber(number) {
 
 let sum = sumNumber(31245);
 
-
-
-
-
+//---------------------------
+//        Exercice 32
+//---------------------------
