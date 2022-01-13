@@ -41,6 +41,41 @@
 
     <br />
 
+    <figure>
+      <cite>Voici la solution :</cite>
+      <img src="./images/exercice_31(bis).png" alt="Fonction Addition nombre" class="image" />
+    </figure>
+
+    <br />
+    <p>La première chose à faire était de séparer chaque chiffre du nombré passé à la fonction.</p>
+    <p>
+      Pour ça, on transforme le nombre en chaîne de caractères avec la méthode <code>toString()</code> puis en tableau en faisant un <code>.split('')</code> sur une chaîne de caractères vides. À ce
+      stade, la variable <code>digitsAsList</code> contient donc le tableau <code>['3', '1', '2', '4', '5']</code>
+    </p>
+    <br />
+
+    <p>
+      On utilise ensuite la méthode <code>map()</code> qui permet de mapper une fonction à chaque éléments d'un tableau. Dans ce cas-ci, on utilise <code>Number</code> pour convertir chaque élément du
+      tableau en nombre.
+    </p>
+    <br />
+    <p>Le tableau <code>digits</code> contient donc maintenant des nombres <code>[3, 1, 2, 4, 5]</code>.</p>
+    <p>On peut maitenant boucler sur ce tableau grâce à une boucle <code>for...of</code> et additionner chaque nombre les uns avec les autres :</p>
+    <br />
+
+    <figure>
+      <img src="./images/exercice_31(bis3).png" alt="Fonction Addition nombre" class="image" />
+    </figure>
+
+    <br />
+
+    <p>Puis on retourne la variable <code>sum</code> :</p>
+    <br />
+    <figure>
+      <img src="./images/exercice_31(bis4).png" alt="Fonction Addition nombre" class="image" />
+    </figure>
+
+    <br />
     <div class="border"></div>
 
     <script src="./js/cours_js_30-35.js"></script>
