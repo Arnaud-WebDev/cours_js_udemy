@@ -92,6 +92,55 @@
     <div class="border"></div>
 
     <h3 class="border_title">Exercice 32 - Remplacer un élément dans un tableau</h3>
+    <p>Dans cet exercice, il faut remplacer les occurences de <code>Julie</code> dans le tableau par <code>Julien</code>.</p>
+    <p>La liste <code>names_replaced</code> doit donc être égale à <code>['Pierre', 'Marie', 'Julien', 'Adrien', 'Julien']</code></p>
+    <br />
+
+    <figure>
+      <img src="./images/exercice_32.png" alt="Remplacer un élément du tableau" class="image" />
+    </figure>
+
+    <br />
+
+    <figure>
+      <cite>Voici la solution :</cite>
+      <img src="./images/exercice_32(bis).png" alt="Remplacer un élément du tableau" class="image" />
+    </figure>
+
+    <br />
+
+    <p>Dans la solution proposéé, on utilise encore une fois la méthode <code>map</code> qui permet de mapper une fonction à tous les éléments d'un tableau.</p>
+    <p>On utilise pour ce faire une fonction fléchée :</p>
+    <br />
+
+    <figure>
+      <img src="./images/exercice_32(bis3).png" alt="Fontion fléchée" class="image" />
+    </figure>
+    <br />
+    <p>Cette fonction est un raccourci pour cette fonction :</p>
+    <br />
+
+    <figure>
+      <img src="./images/exercice_32(bis4).png" alt="Fontion" class="image" />
+    </figure>
+    <br />
+
+    <p>Cette fonction fléchée nous permet donc d'effectuer cette opération sur tous les éléments du tableau.</p>
+    <p>On utilise la méthode <code>replace()</code> pour ainsi remplacer <code>'Julie'</code> par <code>'Julien'</code> sur tous les éléments du tableau.</p>
+
+    <br />
+
+    <figure>
+      <cite>Il existe aussi une solution alternative sans avoir recourt a <code>map()</code></cite>
+      <img src="./images/exercice_32(bis2).png" alt="Fontion" class="image" />
+    </figure>
+    <br />
+
+    <p>
+      On défini un tableau vide à "names_replaced". Ensuite avec la bouche <code>for....of</code> on <code>.push()</code> dans la variable "names_replaced" la méthode <code>replace()</code> qui va
+      nous permettre de remplacer chaque noms <code>'Julie'</code> par <code>'Julien'</code> .
+    </p>
+    <div class="border"></div>
 
     <script src="./js/cours_js_30-35.js"></script>
   </body>
