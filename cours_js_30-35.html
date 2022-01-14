@@ -192,21 +192,58 @@
     <br />
 
     <p>
-      <code>Set</code> est un objet qui a été introduit dans ES6. La nature de <code>Set</code> est telle qu'il vous permet de stocker obligatoirement et uniquement des valeurs uniques, singulières.
+      <code>Set</code> est un objet qui a été introduit dans ES6. La nature de <code>Set</code> est telle qu'il permet de stocker obligatoirement et uniquement des valeurs uniques, singulières.
       <br />
-      Lorsque vous lui passez un tableau, <code>Set</code> supprimera toutes les valeurs en double.
+      Lorsqu'on lui passe un tableau, <code>Set</code> supprimera toutes les valeurs en double.
     </p>
-    <p>
-      Si on avait juste utilisé la méthode <code>new Set(numbers)</code> on aurait juste converti notre tableau en argument. Les doublons seraient bien enlevés mais ce ne serait plus un tableau.
-      <br />
-      Le spread operator <code>...</code> nous permet de convertir le tout en tableau.
-    </p>
-    <p>Et bien évident on <code>.push()</code> directement l'opération dans la variable <code>numbersWithoutDuplicates</code>.</p>
+    <p>Si on avait juste utilisé la méthode <code>new Set(numbers)</code>, on aurait juste converti notre tableau en argument. Les doublons seraient bien enlevés mais ce ne serait plus un tableau.</p>
+    <br />
 
+    <p>Ensuite le spread operator <code>...</code> permet de convertir le tout en tableau.</p>
+    <p>Et bien évident on <code>.push()</code> directement l'opération dans la variable <code>numbersWithoutDuplicates</code>.</p>
+    <br />
+
+    <figure>
+      <cite>On peut tester avec cet exemple sans le spread operator <code>...</code> :</cite>
+      <img src="./images/exercice_33(bis4).png" alt="Fontion" class="image" />
+    </figure>
+    <br />
+    <p>La <code>const test = ...</code> est bien entre accolade, c'est devenu un objet au lieu d'un tableau.</p>
     <div class="border"></div>
 
     <h3 class="border_title">Exercice 34 - Recréer la propriété length</h3>
+    <p>Dans cet exercice, on doit recréer la propriété <code>length</code>, disponible sur les chaînes de caractères, qui permet de récupérer la longueur d'une chaîne.</p>
+    <p>Par exemple :</p>
+    <p><code>'JavaScript'.length</code> => <code>10</code></p>
+    <p>
+      On doit ajouter au code la fonction <code>length</code>, pour qu'elle retourne la longueur de la chaîne de caractères <code>JavaScript</code> (dans ce cas-ci, la fonction doit donc retourner le
+      nombre <code>10</code>.
+    </p>
+    <br />
+    <p>
+      Bien entendu, on ne doit pas utiliser la propriété <code>length</code> sur la chaîne de caractères. Il faut coder soit-même le comportement de la fonction sans cette propriété pour trouver la
+      longueur de la chaîne.
+    </p>
 
+    <figure>
+      <cite>Voici la solution :</cite>
+      <img src="./images/exercice_34.png" alt="Création de la fonction length" class="image" />
+    </figure>
+    <br />
+    <p>Pour résoudre cet exercice; on utilise une simple boucle <code>for...of</code> qui permet d'itérer sur l'élément passé à la fonction.</p>
+    <p>Il ne reste plus qu'à utiliser une variable qui agit en tant que compteur pour compter le nombre d'éléments dans l'itérable, sans passer par la propriété <code>length</code>.</p>
+    <br />
+    <p>
+      La boucle <code>for...of</code> fonctionne sur tous les objets itérables, on peut donc lui passer une chaîne de caractères, un tableau ou encore un objet, et récupérer la longueur de tous ces
+      éléments.
+    </p>
+    <div class="border"></div>
+
+    <h3 class="border_title">Exercice 35 - Ajouter un séparateur de milliers à un nombre</h3>
+
+    <footer class="footer">
+      <p>Cette page est personnelle, c'est un cours avec des exercices que je recopie pour m'entrainer, en aucun cas elle ne doit être partager sur d'autres sites.</p>
+    </footer>
     <script src="./js/cours_js_30-35.js"></script>
   </body>
 </html>

@@ -58,23 +58,35 @@ console.log(names_replaced); */
 //---------------------------
 
 //Ma solution
-/* let numbers = [1, 2, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10];
+let numbers = [1, 2, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10];
 let numbersWithoutDuplicates = [];
 numbersWithoutDuplicates.push(...new Set(numbers));
 
-console.log(numbersWithoutDuplicates);  */
+//console.log(numbersWithoutDuplicates);
 
 //Solution sur Udemy
-let numbers = [1, 2, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10];
+/* let numbers = [1, 2, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10];
 let numbersWithoutDuplicates = [];
 
 for (let number of numbers) {
   if (numbersWithoutDuplicates.indexOf(number) === -1) {
     numbersWithoutDuplicates.push(number);
   }
+} 
+console.log(numbersWithoutDuplicates);*/
+
+//---------------------------
+//        Exercice 34
+//---------------------------
+
+function length(item) {
+  let total = 0;
+  for (let char of item) {
+    total++;
+  }
+  return total;
 }
 
-console.log(numbersWithoutDuplicates);
-
-const ht = new Set(numbers);
-console.log(ht);
+// Ne modifiez pas la ligne ci-dessous
+let longueurChaine = length('JavaScript');
+console.log(longueurChaine);
