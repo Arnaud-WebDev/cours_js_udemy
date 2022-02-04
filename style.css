@@ -146,6 +146,15 @@ code {
   padding-right: 4px;
   background-color: rgba(0, 128, 128, 0.438);
 }
+
+pre {
+  background-color: rgba(0, 0, 0, 0.849);
+  width: 20%;
+  padding: 20px;
+  text-align: justify;
+  color: white;
+  border-radius: 10px;
+}
 /* Balises h1, h2,h3 .... */
 
 /* Mise en page (fin) */
